@@ -17,7 +17,7 @@ app.post('/books', (req, res) => {
             return res.status(500).json({ error: 'Database error' });
         }
 
-        const response = TranslationService.fromMysql(results, req.body, req.body.action);
+        const response = TranslationService.fromMysql(results, req.body.action, req.body);
         res.status(201).json(response);
     });
 });

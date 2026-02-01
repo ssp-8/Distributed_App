@@ -41,15 +41,19 @@ class TranslationService {
         if (action === 'create') {
             console.log(result)
             return {
-                id: result.insertId,
-                ...metadata.data
+                data: {
+                    id: result.insertId,
+                    ...metadata.data
+                }
             };
         } else if (action === 'get') {
             console.log(result);
             return {
-                id: result.id,
-                name: result.name,
-                email: result.email
+                data: {
+                    id: result.id,
+                    name: result.name,
+                    email: result.email
+                }
             };
         }
     }
