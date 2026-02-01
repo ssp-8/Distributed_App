@@ -1,0 +1,22 @@
+{
+    "schemas": {
+        "User": {
+            "type": "object",
+            "properties": {
+                "id": { "type": "integer" },
+                "name": { "type": "string" },
+                "email": { "type": "string" }
+            },
+            "required": ["id", "name", "email"]
+        },
+        "Book": {
+            "type": "object",
+            "properties": {
+                "id": { "type": "integer" },
+                "title": { "type": "string" },
+                "author": { "type": "string" }
+            },
+            "required": ["id", "title", "author"]
+        }
+    }
+}
