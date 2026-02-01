@@ -4,3 +4,8 @@ wrapper-b/node_modules
 mediator/package-lock.json
 wrapper-a/package-lock.json
 wrapper-b/package-lock.json
+
+# Environment variable files
+mediator/.env
+wrapper-a/.env
+wrapper-b/.env
